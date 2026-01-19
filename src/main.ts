@@ -5,7 +5,7 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     cors: {
-      origin: ["http://localhost:3000", "https://*.vercel.app"],
+      origin: ["http://localhost:3000", "https://dapps-frontend.vercel.app" ,"https://*.vercel.app"],
         
       methods: ["GET", "POST"],
     },
